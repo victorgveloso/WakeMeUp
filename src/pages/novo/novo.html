@@ -1,0 +1,63 @@
+<!--
+  Generated template for the NovoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Nova Pergunta</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="perfil()">
+        <ion-icon name="person"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-slides pager>
+
+      <ion-slide>
+          <h2>Selecione a pergunta</h2>
+          <img src="assets/imgs/empty-photo.jpg" (click)="filechooser()">
+      </ion-slide>
+    
+      <ion-slide>
+        <h2>Respostas</h2>
+        <ion-list>
+            <ion-item>
+              <ion-input type="text" value="" placeholder="Resposta"></ion-input>
+            </ion-item>
+            <button ion-button icon-only>
+                <ion-icon name="add"></ion-icon>
+            </button>
+        </ion-list>
+      </ion-slide>
+    
+      <ion-slide>
+        <h2>Tags</h2>
+        <button ion-button right>Send</button>
+        <ion-searchbar
+          [(ngModel)]="myInput"
+          [showCancelButton]="shouldShowCancel"
+          (ionInput)="onInput($event)"
+          (ionCancel)="onCancel($event)">
+        </ion-searchbar>
+        
+        <button ion-button round>
+          Cálculo 1
+        </button>
+        <button ion-button round>
+          Integral
+        </button>
+        <button ion-button round>
+            <ion-icon name="add"></ion-icon>
+        </button>
+      </ion-slide>
+    
+  </ion-slides>
+</ion-content>
