@@ -40,7 +40,6 @@
     
       <ion-slide>
         <h2>Tags</h2>
-        <button ion-button right>Send</button>
         <ion-searchbar
           [(ngModel)]="myInput"
           [showCancelButton]="shouldShowCancel"
@@ -59,5 +58,23 @@
         </button>
       </ion-slide>
     
+      <ion-slide>
+          <h2>Convidados</h2>
+          <ion-list>
+            <ion-item>
+                <ion-label>Victor Guerra Veloso</ion-label>
+                <ion-checkbox></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Filipe Fonseca Lacerda</ion-label>
+                <ion-checkbox></ion-checkbox>
+            </ion-item>
+            <ion-item>
+                <ion-label>Athena Fernandes Sarantôpoulos</ion-label>
+                <ion-checkbox></ion-checkbox>
+            </ion-item>
+          </ion-list>
+          <button ion-button full>Send</button>
+      </ion-slide>
   </ion-slides>
 </ion-content>

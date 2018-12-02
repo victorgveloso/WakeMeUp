@@ -10,12 +10,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AlarmePage } from '../pages/alarme/alarme';
 import { NovoPage } from '../pages/novo/novo';
 import { HistoricoPage } from '../pages/historico/historico';
+import { AmigosPage } from '../pages/amigos/amigos';
 
 @NgModule({
   declarations: [
     MyApp,
     AlarmePage,
     NovoPage,
+    AmigosPage,
     HistoricoPage,
     TabsPage
   ],
@@ -28,6 +30,7 @@ import { HistoricoPage } from '../pages/historico/historico';
     MyApp,
     AlarmePage,
     NovoPage,
+    AmigosPage,
     HistoricoPage,
     TabsPage
   ],
